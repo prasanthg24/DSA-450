@@ -1,0 +1,44 @@
+// Online Java Compiler
+// A[4]={10,20,30,40},REVERSE -={40,30,20,10};
+import java.util.*;
+class Reverse
+{
+void printArray(int a[],int size)  
+{
+    for(int i=0;i<=size;i++)
+    {
+        System.out.println(a[i]+" ");
+    }
+    
+}
+void printReverse(int arr[],int start ,int end)
+{
+    int temp;
+    while(start <end)
+    {
+    temp=arr[start];
+    arr[start]=arr[end];
+    arr[end]=temp;
+        start++;
+        end--;
+}
+}}
+class HelloWorld {
+    public static void main(String[] args)
+    {
+   
+        int arr[]={10,20,30,40,50};
+        Reverse a1=new Reverse();
+           System.out.println(" Array List  ");
+        a1.printArray(arr,4);
+        a1.printReverse(arr ,0,4);
+           System.out.println("Reverse of an array ");
+        a1.printArray(arr,4);
+    }
+}
+
+
+
+
+
+
