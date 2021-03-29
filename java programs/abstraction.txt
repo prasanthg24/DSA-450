@@ -1,0 +1,28 @@
+abstract class lala
+{
+    public abstract void android();
+    public   void ios()
+    {
+        System.out.println("\n im from ios method ...");
+    }
+
+}
+class os extends lala{
+    public void android()
+    {
+        System.out.println("\n im android  method");
+    }
+    static {
+        System.out.println("\nHi");
+    }
+}
+class HelloWorld  {
+    public static void main(String[] args) {
+    
+        
+ System.out.println("\nHello, im main function"); 
+    os a1 = new os();
+    a1.android();
+    a1.ios();
+    }
+}

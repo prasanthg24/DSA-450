@@ -1,0 +1,49 @@
+//abstract class and abstract method
+public class Main
+{
+  public static void main (String[]args)
+  {
+    /* code */
+    MaheshPhone a1 = new SureshPhone ();
+      a1.move ();
+      a1.dance();
+      a1.cook();
+      a1.call();
+
+
+  }
+}
+abstract class MaheshPhone
+{
+  public void call ()
+  {
+    System.out.println ("Calling");
+  }
+  public abstract void move ();
+  public abstract void dance ();
+  public abstract void cook ();
+
+
+}
+
+abstract class RameshPhone extends MaheshPhone
+{
+    public  void move ()
+    {
+        System.out.println ("moving");
+    }
+    
+   
+
+}
+ class SureshPhone extends RameshPhone
+{
+    public  void dance ()
+    {
+      System.out.println ("dancing");
+    }
+    public  void cook()
+    {
+        System.out.println ("cooking");
+    }
+}
