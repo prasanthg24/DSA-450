@@ -1,0 +1,27 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Method Overloading");
+		A obj =new A();
+		obj.show();
+		obj.show(1);
+		obj.show(1.1);
+	}
+}
+class A 
+{
+    public void show()
+    {
+        	System.out.println("im in default show method....");
+    }
+    public void show(int i)
+    {
+        System.out.println("im in int parmeter  show  method" + i);
+    }
+    public void show(double i)
+    {
+        System.out.println(" im in double parmeter show method " + i);
+    }
+    
+}
