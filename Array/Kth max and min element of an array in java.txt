@@ -1,0 +1,30 @@
+find the "Kth" max and min element of an array   https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	System.out.println("Enter the size of the array");
+       Scanner sc =  new Scanner(System.in);
+       int n = sc.nextInt();
+       int[] a =  new int[n];
+       System.out.println("Enter array elements");
+       for (int i=0;i<n;i++)
+       {
+           a[i]=sc.nextInt();
+       }
+       Arrays.sort(a);
+       System.out.println("Enter value");
+       int min = sc.nextInt();
+       System.out.println("min value");
+       System.out.println(a[min-1]);
+      
+      System.out.println("enter max value");
+      int max =  sc.nextInt();
+      System.out.println("max value");
+      int val = n-max;
+      System.out.println(a[val]);
+       
+	}
+}
