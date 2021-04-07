@@ -1,0 +1,45 @@
+ class Main
+{
+    
+    public static void union(int a[],int b[],int m,int n)
+    {
+        int i=0,j=0;
+        while(i<n&&j<m)
+        {
+            if(a[i]<b[j])
+            {
+                System.out.println(a[i] + " ");
+                i++;
+            }
+            else if(a[i]>b[j])
+            {
+                 System.out.println(b[j] + " ");
+                 j++;
+            }
+            else if(a[i]==b[j])
+            {
+                System.out.println(a[i] + " ");
+                i++;j++;
+            }
+        }
+        while(i<n)
+        {
+            System.out.println(a[i++] + " ");
+        }
+        while(j<m)
+        {
+            System.out.println(b[j++] + " ");
+        }
+    }
+    
+    public static void main(String[] args)
+    
+    {
+        int a[]={1,2,3,5,7,8,10};
+        int b[]={3,4,5,6,8,9,10};
+        int m=a.length;
+        int n=b.length;
+        union(a,b,m,n);
+        
+    }
+}
