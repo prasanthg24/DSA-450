@@ -1,0 +1,20 @@
+import java.util.*;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("array list "); 
+        ArrayList  sc=new ArrayList ();
+        sc.add("TCs");
+        sc.add("INfosys");
+        sc.add("Wipro");
+        sc.add(121);
+        Iterator m=sc.iterator();
+        while(m.hasNext())
+        {
+            System.out.println(m.next());
+        }
+        
+        
+        
+    }
+}
