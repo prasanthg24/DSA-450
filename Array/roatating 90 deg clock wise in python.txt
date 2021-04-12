@@ -1,11 +1,7 @@
-
-
 print("Rotating 90* clockwise ")
  
- 
-def rotate_matrix(A):
+ def rotate_matrix(A):
     
-
     #transpose
     for i in range(len(A)):
         for j in range (i,len(A)):
@@ -19,13 +15,6 @@ def rotate_matrix(A):
             A[j][i],A[j][N-1-i]=A[j][N-1-i],A[j][i]
             
     return A
-
-
-
-
-
-
-
 
 
 A=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
