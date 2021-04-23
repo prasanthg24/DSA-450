@@ -1,0 +1,25 @@
+#include<stdio.h>
+void greatest (int arr[],int n)
+{
+  int i,j,next;
+  for(i=0;i<n;i++)
+  {
+    next=-1;
+    for(j=i+1;j<n;j++)
+    {
+      if(arr[i]<arr[j])
+      {
+        next = arr[j];
+        break;
+      }
+    
+    }
+    printf("%d -> %d\n",arr[i],next);
+  }
+}
+int main(){
+  //Next Greater Number
+  int arr[] ={50,3,5,1,44,77};
+  int n= sizeof(arr)/sizeof(arr[0]);
+  greatest(arr,n);
+}
