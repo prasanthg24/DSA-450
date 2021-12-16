@@ -1,0 +1,26 @@
+
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	   
+	  Swap(5,4);
+	 
+	}
+	
+  static    void   Swap(int a ,int b )
+	{
+	    System.out.println(" Before reverse ");
+	    System.out.println( "a = " + a);
+	    System.out.println("b = " + b);
+	    a = a+b; //  9
+	    b = a-b; //9-4 = 5
+	    a = a-b; // 9 -5 = 4
+	    
+	    System.out.println(" After reverse ");
+	    System.out.println( "a = " + a);
+	    System.out.println("b = " + b);
+	    
+	}
+	
+}
