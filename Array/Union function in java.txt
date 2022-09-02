@@ -1,4 +1,5 @@
- class Main
+//Union Function in Java 
+class Main
 {
     
     public static void union(int a[],int b[],int m,int n)

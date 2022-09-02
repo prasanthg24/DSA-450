@@ -1,5 +1,6 @@
-// Online Java Compiler
-// A[4]={10,20,30,40},REVERSE -={40,30,20,10};
+// A[4]={10,20,30,40}
+//REVERSE -={40,30,20,10};
+
 import java.util.*;
 class Reverse
 {
